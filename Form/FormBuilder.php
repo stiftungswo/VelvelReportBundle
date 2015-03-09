@@ -66,7 +66,7 @@ class FormBuilder implements FormBuilderInterface
             //}
         }
         //$validationConstraint = new Collection($validationArray);
-        $form = $this->formFactory->createBuilder('form', $formData));//, array('validation_constraint' => $validationConstraint));
+        $form = $this->formFactory->createBuilder('form', $formData);//, array('validation_constraint' => $validationConstraint));
 
         foreach ($parameters as $key => $value) {
             if (isset($value['options'])) {
