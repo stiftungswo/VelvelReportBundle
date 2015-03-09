@@ -49,24 +49,24 @@ class FormBuilder implements FormBuilderInterface
      * Gets a form
      *
      * @param array $parameters Parameters
-     *
+     * TODO replace validationcostraint with validation_groups
      * @return \Symfony\Component\Form\Form
      * @author r1pp3rj4ck <attila.bukor@gmail.com>
      */
     public function getForm(array $parameters)
     {
         $formData        = array();
-        $validationArray = array();
+        //$validationArray = array();
         foreach ($parameters as $key => $value) {
             if (isset($value['value'])) {
                 $formData[$key] = $value['value'];
             }
-            if (isset($value['validation'])) {
-                $validationArray[$key] = $value['validation'];
-            }
+            //if (isset($value['validation'])) {
+            //    $validationArray[$key] = $value['validation'];
+            //}
         }
-        $validationConstraint = new Collection($validationArray);
-        $form = $this->formFactory->createBuilder('form', $formData, array('validation_constraint' => $validationConstraint));
+        //$validationConstraint = new Collection($validationArray);
+        $form = $this->formFactory->createBuilder('form', $formData));//, array('validation_constraint' => $validationConstraint));
 
         foreach ($parameters as $key => $value) {
             if (isset($value['options'])) {
