@@ -17,5 +17,6 @@
     "autoload": {
         "psr-0": { "Velvel\\ReportBundle": "" }
     },
-    "target-dir": "Velvel/ReportBundle"
+    "target-dir": "Velvel/ReportBundle",
+    "abandoned": true
 }

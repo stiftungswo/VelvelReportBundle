@@ -1,3 +1,5 @@
+:exclamation: Attention: This project is not maintained anymore and the package was marked as abandoned in the composer.json. Please switch to another package, as the [main project](https://github.com/Velvel/VelvelReportBundle) is not maintained as well.
+    
 VelvelReportBundle
 ==================
 
